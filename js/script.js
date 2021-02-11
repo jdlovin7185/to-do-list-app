@@ -1,6 +1,5 @@
 function newItem(){
 
-//javascript
 //1. Adding a new item to the list of items: 
    let li = $('<li></li>');
    let inputValue = $('#input').val();;
@@ -11,6 +10,8 @@ function newItem(){
    } else {
      $('#list').append(li);
    }
+  //  clears the text-box after an input 
+   $("input").val("");
 
  //2. Crossing out an item from the list of items:
 
@@ -36,9 +37,5 @@ function newItem(){
    $('#list').sortable();
 
 }
-
- 
-// To append an element
-// $('.selectedElement').append('<li>some item</li>')
 
 
